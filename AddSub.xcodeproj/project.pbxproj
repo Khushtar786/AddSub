@@ -16,6 +16,7 @@
 		B059126229910703001682D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B059126029910703001682D5 /* Main.storyboard */; };
 		B059126429910706001682D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B059126329910706001682D5 /* Assets.xcassets */; };
 		B059126729910706001682D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B059126529910706001682D5 /* LaunchScreen.storyboard */; };
+		B059127F29910E4A001682D5 /* AddSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B059127A29910E46001682D5 /* AddSub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B059126329910706001682D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B059126629910706001682D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B059126829910706001682D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B059127A29910E46001682D5 /* AddSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		B059124529910403001682D5 /* AddSubTests */ = {
 			isa = PBXGroup;
 			children = (
+				B059127A29910E46001682D5 /* AddSub.swift */,
 				B059124629910403001682D5 /* AddSubTests.swift */,
 				B059124829910403001682D5 /* Info.plist */,
 			);
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					B059123729910403001682D5 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					B059124029910403001682D5 = {
 						CreatedOnToolsVersion = 12.4;
@@ -269,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B059127F29910E4A001682D5 /* AddSub.swift in Sources */,
 				B059124729910403001682D5 /* AddSubTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +442,7 @@
 		B059124D29910403001682D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Applite.AddSub;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -460,6 +467,7 @@
 		B059124E29910403001682D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
